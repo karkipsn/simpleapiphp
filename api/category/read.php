@@ -18,10 +18,10 @@ $category = new Category($db);
 $stmt = $category->read();
 $num = $stmt->rowCount();
  
-// check if more than 0 record found
+// check for record found
 if($num>0){
  
-    // products array
+    //  array of products
     $categories_arr=array();
     $categories_arr["records"]=array();
  
